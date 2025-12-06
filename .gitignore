@@ -306,3 +306,12 @@ converted_taskSamples.js
 tmp/
 data_jsons/
 Eval_Results/
+spar_advanced_evaluation_.json
+spar_bench_text_only_.json
+spar_simplified_evaluation_.json
+spar_simplified_results_.csv
+spat_bench_rgbd_test_.json
+
+data_jsons.zip
+Eval_Results.zip
+.DS_Store
