@@ -5,14 +5,15 @@ This project contains code and resources for evaluating and analyzing the perfor
 ## 📂 Data Preparation
 
 ### Image Data (SPAR-7M)
-Before proceeding, you must download the source images. **This project specifically requires only the ScanNet++ images.**
+Before proceeding, you must download the source images. Please refer to the [SPAR-7M Hugging Face repository](https://huggingface.co/datasets/kmnp/SPAR-7M) for detailed instructions.
 
-Please refer to the [SPAR-7M Hugging Face repository](https://huggingface.co/datasets/kmnp/SPAR-7M) for detailed instructions. You can download the specific subset using the `huggingface-cli` with the `--include` flag to save disk space:
+You can download the dataset using the `huggingface-cli` or `git`:
 
 ```bash
-# Example: Download only ScanNet++ images
-huggingface-cli download --repo-type dataset kmnp/SPAR-7M --include "scannetpp/*" --local-dir ./data/SPAR-7M
+# Example using huggingface-cli
+huggingface-cli download --repo-type dataset kmnp/SPAR-7M --local-dir ./data/SPAR-7M
 ```
+
 Ensure that the images are downloaded and extracted correctly before starting the training process.
 
 ### Training Data (JSON)
