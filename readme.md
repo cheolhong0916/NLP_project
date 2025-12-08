@@ -1,4 +1,4 @@
-# NLP_project
+# 3D-Aware Multi-Modal LLM
 
 This project contains code and resources for evaluating and analyzing the performance of Natural Language Processing (NLP) models.
 
