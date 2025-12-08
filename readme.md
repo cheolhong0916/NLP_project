@@ -4,12 +4,23 @@ This project contains code and resources for evaluating and analyzing the perfor
 
 ## 📂 Data Preparation
 
-### Training Data
+### Image Data (SPAR-7M)
+Before proceeding, you must download the source images. **This project specifically requires only the ScanNet++ images.**
+
+Please refer to the [SPAR-7M Hugging Face repository](https://huggingface.co/datasets/kmnp/SPAR-7M) for detailed instructions. You can download the specific subset using the `huggingface-cli` with the `--include` flag to save disk space:
+
+```bash
+# Example: Download only ScanNet++ images
+huggingface-cli download --repo-type dataset kmnp/SPAR-7M --include "scannetpp/*" --local-dir ./data/SPAR-7M
+```
+Ensure that the images are downloaded and extracted correctly before starting the training process.
+
+### Training Data (JSON)
 To prepare the training data, please download the compressed training JSON files from the Google Drive link below and unzip them into the `train/` directory.
 
 * **Train Data Download Link:** [https://drive.google.com/file/d/1YqoMegnmXvM1pHYzaCVnB94XZIqSiQgO/view?usp=sharing]
 
-### Test Data
+### Test Data (JSON)
 The test JSON files are located in the `test/` folder of this repository. These files are ready to be used and should be integrated into `llms-eval` during the evaluation phase.
 
 ### Plucker Ray Conversion
