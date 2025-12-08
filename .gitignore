@@ -315,3 +315,7 @@ spat_bench_rgbd_test_.json
 data_jsons.zip
 Eval_Results.zip
 .DS_Store
+test.zip
+train.zip
+
+train/

@@ -833,19 +833,10 @@ def quick_check(jsonl_file: str):
 
 
 
-
-
-
-
 def extract_model_name_from_folder(folder_name: str) -> str:
     """Extract model name from folder name"""
     parts = folder_name.split('-')
-    if len(parts) >= 5: 
-        return '-'.join(parts[4:]) 
-    # elif len(parts) == 5:  
-    #     return parts[2] 
-    else:
-        return folder_name
+    return '-'.join(parts[1:])
 
 def scan_eval_folders(base_dir: str = "Eval_Results") -> List[Tuple[str, str]]:
     """Scan evaluation folders and return a list of (model_name, jsonl_file_path)"""
